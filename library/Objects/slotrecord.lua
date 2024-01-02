@@ -1,0 +1,11 @@
+---@meta slotrecord
+
+---@class slotrecord
+---@field type string Slot type.
+---@field number number Numeric value associated with this slot.
+---@field string string Textual value associated with this slot.
+---@field token string Token identified associated with this slot.
+---@field shortcut shortcut Shortcut associated with this slot. Each shortcut record is a table containing class and recordname string fields.
+---@field dice string[] Dice associated with this slot. The table contains numerically indexed die resource names.
+---@field metadata table Metadata associated with this slot.
+---@field custom any Custom LUA variable associated with this slot. This information will not be saved for drag objects placed on hot key bar.

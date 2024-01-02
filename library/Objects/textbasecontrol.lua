@@ -1,4 +1,3 @@
 --- @meta
 
---- @class textbasecontrol
-
+--- @class textbasecontrol: windowcontrol
