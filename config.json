@@ -1,29 +1,23 @@
 {
-    "name": "FGAPI",
-    "files": [
-        "src%/.*%.lua"
-    ],
-    "settings": {
-        "Lua.diagnostics.disable": [
-            "lowercase-global"
-        ],
-        "Lua.runtime.version": "Lua 5.1",
-        "Lua.completion.callSnippet": "Both",
-        "Lua.hint.enable": true,
-        "Lua.diagnostics.globals": [
-            "Comm",
-            "DB",
-            "Debug",
-            "Extension",
-            "File",
-            "Input",
-            "Interface",
-            "Module",
-            "Session",
-            "Token",
-            "User",
-            "Utility"
-        ]
-    }
-
+	"name": "FGAPI",
+	"files": [
+		"src%/.*%.lua"
+	],
+	"settings": {
+		"Lua.runtime.version": "Lua 5.1",
+		"Lua.diagnostics.globals": [
+			"Comm",
+			"DB",
+			"Debug",
+			"Extension",
+			"File",
+			"Input",
+			"Interface",
+			"Module",
+			"Session",
+			"Token",
+			"User",
+			"Utility"
+		]
+	}
 }

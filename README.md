@@ -1,1 +1,1 @@
-# lua-ls-fg-api
+# Lua-ls Library for Fantasy Grounds base API
