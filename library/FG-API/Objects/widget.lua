@@ -7,7 +7,7 @@
 function bringToFront() end
 
 ---Destroy the widget, removing it from the parent container.
----* Using the widget reference for operations after a call to destroy may produce invalid operation. Any reference to the widget object should be invalidated (set to nil).
+---###Using the widget reference for operations after a call to destroy may produce invalid operation. Any reference to the widget object should be invalidated (set to nil).###
 function destroy() end
 
 ---Get the on screen dimensions of the widget. The actual values and their calculation may vary by widget type.
