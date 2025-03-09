@@ -1,7 +1,7 @@
 ---@meta File
 
----@module tokeninstance
----@module databasenode
+---@module 'tokeninstance'
+---@module 'databasenode'
 
 ---@class Image
 Image = {}

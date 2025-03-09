@@ -1,0 +1,3 @@
+---@meta imagecontrol
+
+---@class imagecontrol

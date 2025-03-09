@@ -1,9 +1,9 @@
 ---@meta Token
 
----@module dragdata
----@module tokeninstance
----@module databasenode
----@module imagecontrol
+---@module 'dragdata'
+---@module 'tokeninstance'
+---@module 'databasenode'
+---@module 'imagecontrol'
 
 ---@class Token
 Token = {}
