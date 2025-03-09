@@ -1,12 +1,14 @@
---- @meta
+---@meta
+
 ---@module 'databasenode'
+---@module 'category'
 
 ---@class DB
 DB = {}
 
 ---Adds a child category for the specified data base node.
 ---@param nodeid string|databasenode Data node identifier path (or databasenode object)
----@param category table|string New category information (or name)
+---@param category category|string New category information (or name)
 function DB.addChildCategory(nodeid, category) end
 
 ---Add a general event handler callback function.
@@ -110,7 +112,7 @@ function DB.findNode(nodeid) end
 
 ---Gets the category information for the specified data base node.
 ---@param nodeid string|databasenode Data node identifier path (or databasenode object)
----@return table # Category information for specified node, including the following fields (name, mergeid, base, decal). The name field is the name of the category. The merge ID field is a value that can be specified for each module to allow multiple modules to be listed in a single category. The base field is a number defining the index of the background tab to use when displaying the category. The decal field is a number defining the index of the decal to use when displaying the category. The combination of all four entries defines a unique category.
+---@return category # Category information for specified node, including the following fields (name, mergeid, base, decal). The name field is the name of the category. The merge ID field is a value that can be specified for each module to allow multiple modules to be listed in a single category. The base field is a number defining the index of the background tab to use when displaying the category. The decal field is a number defining the index of the decal to use when displaying the category. The combination of all four entries defines a unique category.
 function DB.getCategory(nodeid) end
 
 ---Fetches the specified child node under the specified node.
@@ -121,12 +123,12 @@ function DB.getChild(sourcenode, name) end
 
 ---Gets the child categories for the specified data base node.
 ---@param nodeid string|databasenode Data node identifier path (or databasenode object)
----@return table # An integer-indexed table of category records. Each category record is a table with the following fields (name, mergeid, base, decal).
+---@return category[] # An integer-indexed table of category records. Each category record is a table with the following fields (name, mergeid, base, decal).
 function DB.getChildCategories(nodeid) end
 
 ---Get the number of child nodes belonging to the specified node.
 ---@param sourcenode string|databasenode A data node identifier path (or a databasenode object) representing the target node
----@param subpath? subpath A relative node identifier specifying the node to delete children from (if sourcenode is a databasenode object)
+---@param subpath? string A relative node identifier specifying the node to delete children from (if sourcenode is a databasenode object)
 ---@return number # The number of child nodes, or zero if database node does not exist.
 function DB.getChildCount(sourcenode, subpath) end
 
@@ -150,9 +152,8 @@ function DB.getChildrenGlobal(source, sourcepath) end
 
 ---Gets the default child category for the specified data base node. When new child nodes are created under this node, the default category is given to those child nodes.
 ---@param nodeid string|databasenode Data node identifier path (or databasenode object)
----@param category string Category to set as default (or category name)
 ---@return string # The name of the default category assigned to child nodes under the specified node.
-function DB.getDefaultChildCategory(nodeid, category) end
+function DB.getDefaultChildCategory(nodeid) end
 
 ---This function returns a list of all users registered as holders for the specified database node. Holders will be notified of changes to the node value. Users are automatically added to the holder list as a result of window sharing operations.
 ---###This function will only work if running as a host.###
@@ -300,7 +301,7 @@ function DB.removeAllHolders(sourcenode) end
 
 ---Removes a child category for the specified data base node. Any child nodes in this category will be given an empty category.
 ---@param nodeid string|databasenode Data node identifier path (or databasenode object)
----@param category table|string
+---@param category category|string
 function DB.removeChildCategory(nodeid, category) end
 
 ---Remove an event handler callback function previously specified using addHandler function.
@@ -321,12 +322,12 @@ function DB.revert(sourcenode) end
 
 ---Sets the category for the specified data base node. The category parameter can also be a table with a "name" element.
 ---@param nodeid string|databasenode Data node identifier path (or databasenode object)
----@param category table|string Category information for specified node, including the following fields (name, mergeid, base, decal). If a string is specified, it will be used as a new table with the string as the name element.
+---@param category category|string Category information for specified node, including the following fields (name, mergeid, base, decal). If a string is specified, it will be used as a new table with the string as the name element.
 function DB.setCategory(nodeid, category) end
 
 ---Sets the default child category for the specified data base node. When new child nodes are created under this node, the default category is given to those child nodes.
 ---@param nodeid string|databasenode Data node identifier path (or databasenode object)
----@param category table|string Category name to set as default (either "name" element or string)
+---@param category category|string Category name to set as default (either "name" element or string)
 function DB.setDefaultChildCategory(nodeid, category) end
 
 ---This function sets the owner of the specified node to the specified player name. Only the GM or the node owner can alter the value of the database node contents.
@@ -356,8 +357,8 @@ function DB.setValue(sourcenode, subpath, type, value) end
 
 ---Updates the child category information for the specified data base node. The source category with the given name will be replaced with the target category, and the category information for all child nodes will be updated.
 ---@param nodeid string|databasenode Data node identifier path (or databasenode object)
----@param source_category table|string Original category information (or name)
----@param target_category table|string Desired category information (or name)
+---@param source_category category|string Original category information (or name)
+---@param target_category category|string Desired category information (or name)
 function DB.updateChildCategory(nodeid, source_category, target_category) end
 
 ---Sets the version number value of the campaign database to the current FG and ruleset versions.
