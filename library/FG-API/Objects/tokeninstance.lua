@@ -5,7 +5,6 @@
 ---Tokens flagged targetable can be clicked by players to indicate they are targeting the corresponding token. Several clients can target one token.
 ---Token instances do not have direct scripting function definitions, but use a handler based notification scheme. Care should be taken to unregister handlers whenever the objects containing the handler script are destroyed.
 
-
 --- @class tokeninstance
 
 ---Add an underlay to the token. Underlays are colored areas drawn based on the grid squares below the token. The size of underlays is given in squares and is measured as a radius from the token centre to the grid square centres. Thus, an equal value as the underlay size will result in a different sized overlay area based on whether the token is situated at a grid square centre or a grid line intersection.
@@ -89,14 +88,14 @@ function isVisible() end
 function onActivation(target) end
 
 ---This function is called when a mouse button is pressed down on the token. If this function is not defined or returns false, the onClickRelease function is not called.
----* The token interface for click events is different than other objects in that a handler must be registered to intercept click events.
+---###The token interface for click events is different than other objects in that a handler must be registered to intercept click events.###
 ---@param target tokeninstance The tokeninstance triggering the event
 ---@param button number Returns a numerical value indicating the button pressed (1 = left, 2 = middle, 4 = button 4, 5 = button 5). Right button is used for radial menus.
 ---@param image imagecontrol The imagecontrol object in which the token was clicked.
 function onClickDown(target, button, image) end
 
 ---This function is called when a mouse button is released, if the cursor was not moved after the click down event. If the control did not process the click down event, this function is not called.
----* The token interface for click events is different than other objects in that a handler must be registered to intercept click events.
+---###The token interface for click events is different than other objects in that a handler must be registered to intercept click events.###
 ---@param target tokeninstance The tokeninstance triggering the event
 ---@param button number Returns a numerical value indicating the button pressed (1 = left, 2 = middle, 4 = button 4, 5 = button 5). Right button is used for radial menus.
 ---@param image imagecontrol The imagecontrol object in which the token was clicked.
@@ -116,7 +115,7 @@ function onContainerChanging(target) end
 function onDelete(target) end
 
 ---This function is called when the left mouse button is pressed down twice in succession on the token. Note that if this function is present and returns nil, the onClickDown function is called as well.
----* The token interface for click events is different than other objects in that a handler must be registered to intercept click events.
+---###The token interface for click events is different than other objects in that a handler must be registered to intercept click events.###
 ---@param target tokeninstance The tokeninstance triggering the event
 ---@param image imagecontrol The imagecontrol object in which the token was clicked.
 ---@return boolean # This function should return true if it handled the event and the processing of the event should be stopped. A value of false indicates that the default framework functionality for the this particular control should not be executed, but the processing should continue for the element below this control, if any. A return value of nil (or the absence of a return statement) indicates that the framework should continue handling the event normally.
@@ -147,7 +146,7 @@ function onDragStart(target, button, x, y, dragdata) end
 
 ---This function is called when a drag and drop operation finishes on the token. The dragdata parameter should be used to access the dragged information.
 ---To transfer information back to the control where the drag originated, the same dragdata object is passed to the onDragEnd function in that control.
----* The token interface for drop events is different than other objects in that a handler must be registered to intercept drop events.
+---###The token interface for drop events is different than other objects in that a handler must be registered to intercept drop events.###
 ---@param target tokeninstance The tokeninstance triggering the event
 ---@param dragdata dragdata A dragdata object containing the state of values connected to the mouse cursor as part of a drag and drop operation.
 ---@return boolean # This function should return true if it handled the event and the processing of the event should be stopped. A value of false indicates that the default framework functionality for the this particular control should not be executed, but the processing should continue for the element below this control, if any. A return value of nil (or the absence of a return statement) indicates that the framework should continue handling the event normally.
@@ -165,7 +164,7 @@ function onHover(target, state) end
 function onHoverUpdate(target, x, y) end
 
 ---This function is called when a user defined item is selected in the token's radial menu.
----* The token interface for menus is different than other objects in that a handler must be registered to intercept menu events.
+---###The token interface for menus is different than other objects in that a handler must be registered to intercept menu events.###
 ---@param target tokeninstance The tokeninstance triggering the event
 ---@param ... number ... A variable amount of number parameters, depending on the menu hierarchy depth of the selected item. A first level menu item will contain one number, identifying the slot it occupies on the menu. A second level item will contain two numbers, with the first specifying the submenu position, and the second the position of the item in the submenu. See registerMenuItem for more information.
 function onMenuSelection(target, ...) end
@@ -192,7 +191,7 @@ function onTargetUpdate(source, target, status) end
 function onTargetedUpdate(source, target, status) end
 
 ---This function is called when the mouse wheel is spun over the token.
----* The token interface for wheel events is different than other objects in that a handler must be registered to intercept click events.
+---###The token interface for wheel events is different than other objects in that a handler must be registered to intercept click events.###
 ---@param target tokeninstance The tokeninstance triggering the event
 ---@param notches number This function should return true if it handled the event and the processing of the event should be stopped. A value of false indicates that the default framework functionality for the this particular control should not be executed, but the processing should continue for the element below this control, if any. A return value of nil (or the absence of a return statement) indicates that the framework should continue handling the event normally.
 ---@return boolean|nil # This function should return true if it handled the event and the processing of the event should be stopped. A value of false indicates that the default framework functionality for the this particular control should not be executed, but the processing should continue for the element below this control, if any. A return value of nil (or the absence of a return statement) indicates that the framework should continue handling the event normally.
@@ -201,7 +200,7 @@ function onWheel(target, notches) end
 ---This function registers a new user defined menu item. If the user selects the item, the script is notified of this through the onMenuSelection handler, if registered.
 ---The menu item is defined by specifying the bitmap and label to use, as well as the position of the item on the menu. The position is given as a number value. To define entries in submenus, use multiple number values, with the first being the position value of the outermost submenu, and the last being the position of the actual menu item in the innermost submenu.
 ---Trying to redefine an existing menu item will fail.
----* The token interface for menus is different than other objects in that a handler must be registered to intercept menu events.
+---###The token interface for menus is different than other objects in that a handler must be registered to intercept menu events.###
 ---@param label string A string to be used as the label of the menu item
 ---@param icon string The name of an icon resource to use as the bitmap for the menu item
 ---@param ... number A list of numbers specifying the menu item position as a number between 1 and 8, with one being the top slot, and the progression of numbers proceeding in a clockwise direction.
@@ -229,8 +228,8 @@ function setName(name) end
 ---@param orientation number The desired new rotation value
 function setOrientation(orientation) end
 
----* Available on host only.
 ---Sets token rotation mode for this token, which overrides imagecontrol setting. (physical token rotation or facing arrows)
+---###Available on host only.###
 ---@param mode string Desired orientation mode (rotation or facing).
 function setOrientationMode(mode) end
 
