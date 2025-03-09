@@ -1,0 +1,14 @@
+---@meta exportparametertable
+
+---@class exportparametertable
+---@field name string The lookup name of the new module
+---@field displayname string The visible name of the new module.
+---@field category string The category of the new module.
+---@field author string The author of the new module.
+---@field ruleset string The ruleset targeted by the new module. Leave empty if targeting all rulesets.
+---@field filename string The file name of the new module. (.mod extension will be appended.)
+---@field thumbnail string The file name of the thumbnail graphic which should be used for the module.
+---@field playervisible boolean Whether the new module is targeting players or GMs.
+---@field exportnodes string[] Table of string values indicating the database paths to export.
+---@field exportassets string[] Table of string values indicating the asset names to export.
+---@field assetrewrites table Table of key-value string pairs indicating asset path rewrites from original path to new module path.

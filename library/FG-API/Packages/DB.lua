@@ -355,11 +355,17 @@ function DB.setPublic(nodeid, value) end
 function DB.setStatic(sourcenode, state) end
 
 ---Sets the data in the specified database node path. If the node exists already, the type value must match the existing database node type. If the node does not exist, a new node will be created with the specified type. The format of the value parameter(s) depends on the type of the node.
----@param sourcenode string|databasenode A data node identifier path (or a databasenode object) representing the target node
+---@param sourcenode databasenode A databasenode object representing the parent of the target node
 ---@param subpath? string If the first parameter has type databasenode, then this parameter specifies the relative data node identifier path from the specified node object.
 ---@param type string Identifier for the data type of the new or existing node.
 ---@param value any Data to be placed in the database node
 function DB.setValue(sourcenode, subpath, type, value) end
+
+---Sets the data in the specified database node path. If the node exists already, the type value must match the existing database node type. If the node does not exist, a new node will be created with the specified type. The format of the value parameter(s) depends on the type of the node.
+---@param nodepath string A data base path identifier.
+---@param type string Identifier for the data type of the new or existing node.
+---@param value any Data to be placed in the database node
+function DB.setValue(nodepath, type, value) end
 
 ---Updates the child category information for the specified data base node. The source category with the given name will be replaced with the target category, and the category information for all child nodes will be updated.
 ---@param nodeid string|databasenode Data node identifier path (or databasenode object)

@@ -1,5 +1,7 @@
 ---@meta Module
 
+---@module "exportparametertable"
+
 ---@class Module
 Module = {}
 
@@ -12,7 +14,7 @@ function Module.activate(name) end
 function Module.deactivate(name) end
 
 ---Exports a set of database nodes, images and tokens to a data module file within the modules subfolder of the FG data folder.  Any tokens or images referenced by exported database nodes will automatically be included.
----@param parametertable table A table of containing multiple parameters with the following keys:
+---@param parametertable exportparametertable A table of containing multiple parameters with the following keys:
 ---• name (string) - The lookup name of the new module
 ---• displayname (string) - The visible name of the new module.
 ---• category (string) - The category of the new module.
