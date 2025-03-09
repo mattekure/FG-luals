@@ -59,7 +59,7 @@ function onNavigateUp() end
 
 ---If present, this function is executed whenever the user presses the tab key when editing the text. This method can be used to support list or table like operation for controls. If the shift key is pressed as well, the parameter will be false
 ---@param forward boolean If the tab key is pressed without the shift key being depressed, the value is true, indicating a forward tab operation. If the shift key is depressed, the value is false indicating a backward tab operation.
-function onTab() end
+function onTab(forward) end
 
 ---Sets the color used when rendering the contents of the control. This setting overrides the color defined in the font used. To restore the use of font resource color, specify nil as the parameter value.
 ---The specified parameter is a color value in a HTML-style string representation, in the format "#AARRGGBB". The components are hexadecimal digits specifying the value of the alpha (transparency), red, green and blue channels, respectively, in the range 0 .. 255. If alpha is zero or not defined, FF is assumed.
