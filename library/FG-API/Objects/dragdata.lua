@@ -65,7 +65,7 @@ function getNumberData() end
 function getSecret() end
 
 ---Retrieves the shortcut value in the currently active slot in the top level data.
----@return windowclass|string|nil # The windowclass for the shortcut data or nil if no shortcut has been specified(string) OR The database node identifier for the shortcut target or nil if no shortcut has been specified
+---@return string|nil # The windowclass for the shortcut data or nil if no shortcut has been specified(string) OR The database node identifier for the shortcut target or nil if no shortcut has been specified
 function getShortcutData() end
 
 ---Returns the list of shortcut records stored for this drag object.
@@ -137,7 +137,7 @@ function setDescription(description) end
 
 ---Set the dice data in the currently active slot in the top level data. See getDiceData for details of the dice data.  If the individual dice list is missing, then it will be rebuilt from the dice expression key (“expr”).  If the dice expression is missing, then it will be rebuilt as the addition of the individual dice.
 ---@param dicedata string[] An integer indexed table of strings listing the dice expression and total, as well as the details of the individual dice to be used in the dice expression.
-function setDiceData(dielist) end
+function setDiceData(dicedata) end
 
 ---Set the name of the icon resource used to render a graphic at the mouse cursor while the drag is taking place.
 ---@param icon string The name of an icon resource used for the icon

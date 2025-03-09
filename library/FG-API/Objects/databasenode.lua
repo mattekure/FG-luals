@@ -26,7 +26,7 @@
 function addChildCategory(category) end
 
 ---This function adds the specified user as a holder for this node and all child nodes. If the owner flag is set, the user will also be able to modify the contents of data nodes. In such a case, any existing ownership is revoked.
----* This function will only return valid values if running as the session host. Using User.isHost to confirm this is recommended.
+---###This function will only return valid values if running as the session host. Using User.isHost to confirm this is recommended.###
 ---@param username string The username of the user gaining the status
 ---@param owner boolean If true, the user will also be flagged the owner of the node
 function addHolder(username, owner) end
@@ -229,7 +229,7 @@ function setStatic(state) end
 
 ---Sets the data in the database node. The format of the parameter(s) depends on the type of the node.
 ---@param ... any Data placed in the database node
-function setValue(value) end
+function setValue(...) end
 
 ---Updates the child category information for this data base node. The source category with the given name will be replaced wih tht target category, and the category information for all child nodes will be updated.
 ---@param source_category category|string Original category information (or name)
