@@ -7,9 +7,9 @@
 ---@class widgetcontainer
 
 ---Adds a bitmapwidget to the container.
----@param bitmap? string A name of the bitmap resource used in the bitmap widget
+---@param value string|table?  A name of the bitmap resource used in the bitmap widget or A table of bitmap values
 ---@return bitmapwidget # The return value is a reference to the created widget.
-function addBitmapWidget(bitmap) end
+function addBitmapWidget(value) end
 
 ---Adds a textwidget to the container.
 ---@param font? string The name of a font resource used for rendering the text in the widget

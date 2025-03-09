@@ -1,0 +1,14 @@
+---@meta widgettable
+
+---@class widgetable
+---@field name string Name identifier for widget lookup.
+---@field tooltipres string String asset to define tooltip.
+---@field tooltip string Tooltip text (if string asset not defined).
+---@field position string Valid values contain combination of  “left”|”right” and/or ”top”|”bottom”.  This defines the initial anchor position relative to the widget size.
+---@field x number Horizontal offset from initial position in display units
+---@field y number Vertical offset from initial position in display units
+---@field frame string Frame asset to display underneath widget
+---@field frameoffset string Frame expansion offset for how far to offset defined frame from widget size using 4 comma separated numbers (top, left, right, bottom).
+---@field color string ARGB hex code to indicate tint color applied to widget display.
+---@field rotation number Rotation angle of widget display. [0-359]
+---@field displaymode string Valid values are: ““, “2D”, “3D”.  Defines which modes that widget is drawn in (all vs. top-down vs. camera).
