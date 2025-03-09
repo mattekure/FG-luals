@@ -1,4 +1,4 @@
----@meta
+---@meta File
 
 ---@class File
 File = {}

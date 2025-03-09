@@ -1,4 +1,4 @@
----@meta
+---@meta Debug
 
 ---@class Debug
 Debug = {}

@@ -1,4 +1,4 @@
----@meta
+---@meta Session
 
 ---@class Session
 ---@field IsHost boolean Variable is `true` if client running as the host and `false` if running as a player or in local mode.

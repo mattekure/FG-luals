@@ -1,4 +1,5 @@
----@meta
+---@meta Token
+
 ---@module dragdata
 ---@module tokeninstance
 ---@module databasenode

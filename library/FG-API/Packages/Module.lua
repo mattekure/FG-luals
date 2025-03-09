@@ -1,4 +1,4 @@
----@meta
+---@meta Module
 
 ---@class Module
 Module = {}

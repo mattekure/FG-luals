@@ -1,4 +1,4 @@
----@meta
+---@meta Utility
 
 ---@class Utility
 Utility = {}

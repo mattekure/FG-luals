@@ -1,4 +1,4 @@
----@meta
+---@meta Interface
 
 ---@module "windowcontrol"
 ---@module "windowinstance"

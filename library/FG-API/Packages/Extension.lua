@@ -1,4 +1,4 @@
----@meta
+---@meta Extension
 
 ---@class Extension
 Extension = {}

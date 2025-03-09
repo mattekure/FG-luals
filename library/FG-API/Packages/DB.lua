@@ -1,4 +1,4 @@
----@meta
+---@meta DB
 
 ---@module 'databasenode'
 ---@module 'category'
