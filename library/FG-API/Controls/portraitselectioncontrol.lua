@@ -1,0 +1,3 @@
+---@meta portraitselectioncontrol
+
+---@class portraitselectioncontrol

@@ -1,0 +1,3 @@
+---@meta stringcontrol
+
+---@class stringcontrol

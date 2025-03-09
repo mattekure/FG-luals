@@ -1,0 +1,3 @@
+---@meta windowlist
+
+---@class windowlist

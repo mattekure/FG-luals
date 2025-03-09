@@ -1,0 +1,3 @@
+---@meta chatwindow
+
+---@class chatwindow

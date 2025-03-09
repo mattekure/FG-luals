@@ -1,0 +1,3 @@
+---@meta formattedtextcontrol
+
+---@class formattedtextcontrol

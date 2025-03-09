@@ -1,0 +1,3 @@
+---@meta scrollbarcontrol
+
+---@class scrollbarcontrol

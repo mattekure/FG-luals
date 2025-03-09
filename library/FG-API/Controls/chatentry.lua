@@ -1,0 +1,3 @@
+---@meta chatentry
+
+---@class  chatentry

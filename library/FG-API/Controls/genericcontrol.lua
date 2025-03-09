@@ -1,0 +1,3 @@
+---@meta genericcontrol
+
+---@class genericcontrol

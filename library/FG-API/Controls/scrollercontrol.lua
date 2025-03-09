@@ -1,0 +1,3 @@
+---@meta scrollercontrol
+
+---@class scrollercontrol

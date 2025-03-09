@@ -1,4 +1,4 @@
---- @meta
+--- @meta textbasecontrol
 
 ---This object acts as the base interface for text elements, and is never directly instanced. This interface provides functions for manipulating the string content as well as editing options such as cursor and selection positions.
 ---The interface contains utility events that can be used to simulate list or table like functionality. To support this, the system should either contain controls in a list or grid formation, or a windowlist with text controls.

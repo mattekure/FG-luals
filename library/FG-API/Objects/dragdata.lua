@@ -1,4 +1,4 @@
----@meta
+---@meta dragdata
 
 ---@module 'databasenode'
 ---@module 'shortcut'

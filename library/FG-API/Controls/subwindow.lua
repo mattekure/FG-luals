@@ -1,0 +1,3 @@
+---@meta subwindow
+
+---@class subwindow

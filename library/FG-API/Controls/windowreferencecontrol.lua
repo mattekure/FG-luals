@@ -1,0 +1,3 @@
+---@meta windowreferencecontrol
+
+---@class windowreferencecontrol
