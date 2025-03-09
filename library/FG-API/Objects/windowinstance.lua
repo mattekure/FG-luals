@@ -42,7 +42,7 @@ function getFrame() end
 function getLockState() end
 
 ---Returns the position of the window on the screen calculated from the top left corner of the application window.
----** Calling this function on a dynamically sized window used as a subwindow or list item may have unpredictable results.
+---###Calling this function on a dynamically sized window used as a subwindow or list item may have unpredictable results.###
 ---@return number # The X coordinate of the window, distance from the left edge in pixels.
 ---@return number # The Y coordinate of the window, distance from the top edge in pixels.
 function getPosition() end
@@ -112,7 +112,7 @@ function onMenuSelection(...) end
 function onMove(source) end
 
 ---This handler is triggered whenever the size of a window is changed. It can be used to implement specific content positioning based on window size.
----Repositioning controls may trigger a new layout pass for the entire window. Using this function carelessly may cause significant performance hits.
+---###Repositioning controls may trigger a new layout pass for the entire window. Using this function carelessly may cause significant performance hits.###
 ---@param source windowinstance The windowinstance causing the event.
 function onSizeChanged(source) end
 
@@ -149,15 +149,15 @@ function setFrame(name) end
 function setLockState(lock) end
 
 ---Adjusts the position of a window on the screen.
----** A window moved out of the application window area may be unrecoverable by the user. Keep in mind that the application window size may vary by user.
----** Calling this function on a dynamically sized window used as a subwindow or list item may have unpredictable results.
+---###A window moved out of the application window area may be unrecoverable by the user. Keep in mind that the application window size may vary by user.###
+---###Calling this function on a dynamically sized window used as a subwindow or list item may have unpredictable results.###
 ---@param x number The new X coordinate position of the window.
 ---@param y number The new Y coordinate position of the window.
 ---@param relative boolean If true and x/y coordinates are negative, then they will be applied as negative offsets to tabletop width/height, respectively.
 function setPosition(x, y, relative) end
 
 ---Resizes the window to the given dimensions. All controls will be laid out according to the new size. This function will override the operation of an automatic resize performed for shared windows whose size is controlled by the host.
----** Calling this function on a dynamically sized window used as a subwindow or list item may have unpredictable results.
+---###Calling this function on a dynamically sized window used as a subwindow or list item may have unpredictable results.###
 ---@param width number The new width of the window in pixels.
 ---@param height number The new height of the window in pixels.
 function setSize(width, height) end

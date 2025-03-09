@@ -5,11 +5,10 @@
 ---The name is a simple string specified as an attribute in the element definition or passed to windowinstance.createControl. By default, it is also the name of the child node under the window instance data source that is used as the data source database node for the control itself. See databasecontrol for details on how controls are bound to the database.
 ---The position of the control can be specified as absolute coordinates relative to the window or relative coordinates that are relative to the other controls in the window. Absolute positioning uses an X and Y coordinate that can be relative to any side of the window and a width/height or a bottom-right corner offset to define the position. Relatively positioned controls are anchored to the sides of other controls in the window, using varying anchor combinations and offset values.
 
-
 ---@class windowcontrol: widgetcontainer
 
 ---Moves the control to the front in the processing order. It will be drawn last (on top) and will be the first to receive interface events at its position.
----* Reordering the controls will affect layout order. Anchored controls may behave erratically if their parent is processed after them.
+---###Reordering the controls will affect layout order. Anchored controls may behave erratically if their parent is processed after them.###
 function bringToFront() end
 
 ---Destroys the control, removing it from the window.
@@ -164,7 +163,7 @@ function resetAnchor(target) end
 function resetMenuItems() end
 
 ---Moves the control to the back in the processing order. It will be drawn first (behind others) and will be the last to receive interface events at its position.
----* Reordering the controls will affect layout order. Anchored controls may behave erratically if their parent is processed after them.
+---###Reordering the controls will affect layout order. Anchored controls may behave erratically if their parent is processed after them.###
 function sendToBack() end
 
 ---Sets an anchor point for one of the edges (left, top, right or bottom) of the control.
