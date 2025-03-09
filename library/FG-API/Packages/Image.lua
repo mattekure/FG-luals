@@ -136,12 +136,60 @@ function Image.hasTokens(dbnodeORdbpath) end
 ---@return boolean # Returns true if the database node exists and is an image value database node, or false if not.
 function Image.isImage(dbnodeORdbpath) end
 
-function Image.setDistanceBaseUnits() end
-function Image.setDistanceDiagMult() end
-function Image.setDistanceSuffix() end
-function Image.setGridOffset() end
-function Image.setGridSize() end
-function Image.setGridSnap() end
-function Image.setGridType() end
-function Image.setTokenLockState() end
-function Image.snapToGrid() end
+---Sets the distance base units of the specified image value database node.
+---If the specified database node does not exist or is not an image value database node, then an error is generated.
+---@param dbnodeORdbpath databasenode|string Specifies the database node whose state is being queried.
+---@param units number Specifies the desired units.
+function Image.setDistanceBaseUnits(dbnodeORdbpath, units) end
+
+---Sets the distance diagonal multiplier of the specified image value database node.
+---If the specified database node does not exist or is not an image value database node, then an error is generated.
+---@param dbnodeORdbpath databasenode|string Specifies the database node whose state is being queried.
+---@param multiplier number Specifies the desired multiplier. [>0 for grid-based multiple; 0 for raw calculation]
+function Image.setDistanceDiagMult(dbnodeORdbpath, multiplier) end
+
+---Sets the distance distance suffix of the specified image value database node.
+---If the specified database node does not exist or is not an image value database node, then an error is generated.
+---@param dbnodeORdbpath databasenode|string Specifies the database node whose state is being queried.
+---@param suffix number Specifies the desired suffix.
+function Image.setDistanceSuffix(dbnodeORdbpath, suffix) end
+
+---Sets the offset of the first grid square in the top left corner of the specified image value database node. The valid values for the offsets range from zero to -((grid size) - 1), any values not in this range will be converted to fit the interval.
+---If the specified database node does not exist or is not an image value database node, then an error is generated.
+---@param dbnodeORdbpath databasenode|string Specifies the database node whose state is being queried.
+---@param offsetx number The desired horizontal grid offset
+---@param offsety number The desired vertical grid offset
+function Image.setGridOffset(dbnodeORdbpath, offsetx, offsety) end
+
+---Set the grid size of the specified image value database node.
+---If the specified database node does not exist or is not an image value database node, then an error is generated.
+---@param dbnodeORdbpath databasenode|string Specifies the database node whose state is being queried.
+---@param size number The desired grid size
+function Image.setGridSize(dbnodeORdbpath, size) end
+
+---Sets whether grid snapping is enabled on the specified image value database node.
+---If the specified database node does not exist or is not an image value database node, then an error is generated.
+---@param dbnodeORdbpath databasenode|string Specifies the database node whose state is being queried.
+---@param snapenable number If 0 then disable grid snapping; otherwise, enable grid snapping.
+function Image.setGridSnap(dbnodeORdbpath, snapenable) end
+
+---Sets the grid type on the specified image value database node. Valid types are "square", "hexcolumn" (hexes stacked vertically) and "hexrow" (hexes stacked horizontally). The token orientation will be automatically set to 8 (square) or 12 (hex), based on the new grid type.
+---If the specified database node does not exist or is not an image value database node, then an error is generated.
+---@param dbnodeORdbpath databasenode|string Specifies the database node whose state is being queried.
+---@param type string The desired grid type
+function Image.setGridType(dbnodeORdbpath, type) end
+
+---Sets whether clients can move tokens on the specified image value database node. Only scripts running on the session host can set this property.
+---If the specified database node does not exist or is not an image value database node, then an error is generated.
+---@param dbnodeORdbpath databasenode|string Specifies the database node whose state is being queried.
+---@param state boolean The desired lock state
+function Image.setTokenLockState(dbnodeORdbpath, state) end
+
+---Returns the nearest snap point on the specified image value database node of the specified X and Y coordinate point, either vertex or center.
+---If the specified database node does not exist or is not an image value database node, then an error is generated.
+---@param dbnodeORdbpath databasenode|string Specifies the database node whose state is being queried.
+---@param x number The X coordinate to snap
+---@param y number The Y coordinate to snap
+---@return number # Returns the snapped X coordinate.
+---@return number # Returns the snapped Y coordinate.
+function Image.snapToGrid(dbnodeORdbpath, x, y) end
