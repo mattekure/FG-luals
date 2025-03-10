@@ -1,3 +1,5 @@
 ---@meta scrollbarcontrol
 
----@class scrollbarcontrol
+---@class scrollbarcontrol: windowcontrol
+
+function setTarget() end

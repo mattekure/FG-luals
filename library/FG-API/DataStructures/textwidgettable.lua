@@ -1,6 +1,6 @@
 ---@meta textwidgettable
 
----@class textwidgettable: widgetable
+---@class textwidgettable: widgettable
 ---@field font string Font asset to display text.
 ---@field text string Text to display.
 ---@field w number Maximum text widget horizontal size.

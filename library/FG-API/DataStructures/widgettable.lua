@@ -1,6 +1,6 @@
 ---@meta widgettable
 
----@class widgetable
+---@class widgettable
 ---@field name string Name identifier for widget lookup.
 ---@field tooltipres string String asset to define tooltip.
 ---@field tooltip string Tooltip text (if string asset not defined).
