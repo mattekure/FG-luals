@@ -1,0 +1,42 @@
+---@meta ActorCommonManager
+
+---@class ActorCommonManager
+
+ActorCommonManager = {}
+
+function ActorCommonManager.onInit() end
+function ActorCommonManager.getSpaceReach(v) end
+function ActorCommonManager.setRecordTypeSpaceReachCallback(sRecordType, fn) end
+function ActorCommonManager.getRecordTypeSpaceReachCallback(sRecordType) end
+function ActorCommonManager.hasRecordTypeSpaceReachCallback(sRecordType) end
+function ActorCommonManager.onRecordTypeSpaceReachEvent(sRecordType, rActor) end
+function ActorCommonManager.setDefaultSpaceReachFromActorSizeKey(sKey) end
+function ActorCommonManager.setSpaceReachFromActorSizeCallback(sKey, fn) end
+function ActorCommonManager.getSpaceReachFromActorSizeCallback(sKey) end
+function ActorCommonManager.getSpaceReachFromActorSize(nActorSize, sFallbackKey) end
+function ActorCommonManager.getSpaceReachCore(rActor) end
+function ActorCommonManager.getSpaceReachDnD3Legacy(rActor) end
+function ActorCommonManager.getSpaceReachFromTypeFieldCore(rActor) end
+function ActorCommonManager.getSpaceReachFromSizeFieldCore(rActor) end
+function ActorCommonManager.getSpaceReachFromActorSizeD20(nActorSize) end
+function ActorCommonManager.getSpaceReachFromActorSize4E(nActorSize) end
+function ActorCommonManager.getSpaceReachFromActorSize5E(nActorSize) end
+function ActorCommonManager.isCreatureSizeDnD5(rActor, sParam) end
+function ActorCommonManager.isCreatureSizeDnD3(rActor, sParam) end
+function ActorCommonManager.internalIsCreatureSizeDnDParam(sParam) end
+function ActorCommonManager.internalIsCreatureSizeDnDCompare(tParamSize, nActorSize) end
+function ActorCommonManager.getCreatureSizeDnD5(rActor) end
+function ActorCommonManager.getCreatureSizeDnD3(rActor) end
+function ActorCommonManager.getCreatureSizeFromSizeFieldCore(rActor) end
+function ActorCommonManager.getCreatureSizeFromTypeFieldCore(rActor) end
+function ActorCommonManager.getCreatureTypeDnD(rActor) end
+function ActorCommonManager.getCreatureTypesDnD(rActor) end
+function ActorCommonManager.isCreatureTypeDnD(rActor, sParam) end
+function ActorCommonManager.internalGetCreatureTypeDnDParam(sParam) end
+function ActorCommonManager.internalGetCreatureTypesFromStringDnD(sType, bUseDefaultType) end
+function ActorCommonManager.internalHandleCreatureTypeDnDHalfType(tSource) end
+function ActorCommonManager.internalIsCreatureTypeDnDMatch(tSource, tCheck, bSingle, bUseDefault, sDefault) end
+function ActorCommonManager.isCreatureAlignmentDnD(rActor, sParam) end
+function ActorCommonManager.getCreatureAlignmentDnD(s, bUseDefault) end
+function ActorCommonManager.internalGetCreatureAlignmentDnDParam(sParam) end
+function ActorCommonManager.internalGetCreatureAlignmentDnDActor(rActor) end

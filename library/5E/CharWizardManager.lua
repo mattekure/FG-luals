@@ -1,0 +1,100 @@
+---@meta CharWizardManager
+
+---@class CharWizardManager
+
+CharWizardManager = {}
+
+function CharWizardManager.registerWindow(w) end
+function CharWizardManager.onTabButtonPressed(w, sTabTarget) end
+function CharWizardManager.getWizardWindow() end
+function CharWizardManager.getWizardClassWindow() end
+function CharWizardManager.getWizardBackgroundWindow() end
+function CharWizardManager.getWizardSpeciesWindow() end
+function CharWizardManager.getWizardAbilitiesWindow() end
+function CharWizardManager.getWizardEquipmentWindow() end
+function CharWizardManager.getWizardCommitWindow() end
+function CharWizardManager.getCommitSummaryContentWindow() end
+function CharWizardManager.getCommitWarningsWindow() end
+function CharWizardManager.createDecisions(w, tData) end
+function CharWizardManager.createDecision(w, tData) end
+function CharWizardManager.getInstructionsVisibility() end
+function CharWizardManager.setInstructionsVisibility(bShow) end
+function CharWizardManager.helperRefreshTabInstructionsVisibility(w) end
+function CharWizardManager.refreshInstructionsVisibility(wInstructions) end
+function CharWizardManager.getData() end
+function CharWizardManager.resetData() end
+function CharWizardManager.isLevelUpData() end
+function CharWizardManager.setIdentity(sRecord) end
+function CharWizardManager.getIdentityNode() end
+function CharWizardManager.getName() end
+function CharWizardManager.setName(s) end
+function CharWizardManager.setSize(s) end
+function CharWizardManager.getStartingGold() end
+function CharWizardManager.setStartingGold(n) end
+function CharWizardManager.getAbilityData() end
+function CharWizardManager.clearAbilityData() end
+function CharWizardManager.hasBackground() end
+function CharWizardManager.getBackgroundData() end
+function CharWizardManager.clearBackgroundData() end
+function CharWizardManager.hasClasses() end
+function CharWizardManager.getClassData() end
+function CharWizardManager.clearClassData() end
+function CharWizardManager.getStartingClassData() end
+function CharWizardManager.clearStartingClassData() end
+function CharWizardManager.getEquipmentData() end
+function CharWizardManager.clearEquipmentData() end
+function CharWizardManager.hasSpecies() end
+function CharWizardManager.getSpeciesData() end
+function CharWizardManager.clearSpeciesData() end
+function CharWizardManager.getImportData() end
+function CharWizardManager.clearImportData() end
+function CharWizardManager.helperCollectDataType(s) end
+function CharWizardManager.helperCollectDataTypeMap(s) end
+function CharWizardManager.helperCollectDataTypeBaseMap(s) end
+function CharWizardManager.helperCollectDataTypeChoiceMap(s) end
+function CharWizardManager.collectSaveProficiencies() end
+function CharWizardManager.collectSkills() end
+function CharWizardManager.collectExpertises() end
+function CharWizardManager.collectArmorProficiencies() end
+function CharWizardManager.collectWeaponProficiencies() end
+function CharWizardManager.collectToolProficiencies() end
+function CharWizardManager.collectLanguages() end
+function CharWizardManager.collectFeats() end
+function CharWizardManager.collectSaveProficienciesNew() end
+function CharWizardManager.collectArmorProficienciesNew() end
+function CharWizardManager.collectWeaponProficienciesNew() end
+function CharWizardManager.collectToolProficienciesNew() end
+function CharWizardManager.getAvailableSkills() end
+function CharWizardManager.filterByAvailableSkills(tSkills) end
+function CharWizardManager.clearSummary() end
+function CharWizardManager.populateSummary() end
+function CharWizardManager.getCommitWarnings() end
+function CharWizardManager.checkCompletion() end
+function CharWizardManager.updateAlerts() end
+function CharWizardManager.updateClassAlerts() end
+function CharWizardManager.updateBackgroundAlerts() end
+function CharWizardManager.updateSpeciesAlerts() end
+function CharWizardManager.updateAbilitiesAlerts() end
+function CharWizardManager.updateEquipmentAlerts() end
+function CharWizardManager.checkImport(nodeChar) end
+function CharWizardManager.importCharacter(nodeChar) end
+function CharWizardManager.helperImportGetClassRecord(nodeCharClass) end
+function CharWizardManager.onCommit() end
+function CharWizardManager.requestCommit() end
+function CharWizardManager.requestCommitResponse(bResult, sIdentity) end
+function CharWizardManager.commitCharacter(nodeChar) end
+function CharWizardManager.levelupCharacter() end
+function CharWizardManager.addCommitBasics(nodeChar) end
+function CharWizardManager.addCommitSpecies(nodeChar) end
+function CharWizardManager.setCommitAbilityScores(nodeChar) end
+function CharWizardManager.addCommitBackground(nodeChar) end
+function CharWizardManager.addCommitFeats(nodeChar) end
+function CharWizardManager.addCommitClasses(nodeChar) end
+function CharWizardManager.addCommitLevelUpClass(nodeChar) end
+function CharWizardManager.addCommitProficiencies(nodeChar) end
+function CharWizardManager.addCommitSkills(nodeChar) end
+function CharWizardManager.addCommitLanguages(nodeChar) end
+function CharWizardManager.addCommitInnateSpells(nodeChar) end
+function CharWizardManager.addCommitSpells(nodeChar) end
+function CharWizardManager.addCommitInventory(nodeChar) end
+function CharWizardManager.addCommitCurrency(nodeChar) end

@@ -1,0 +1,47 @@
+---@meta ClassSpellListManager
+
+---@class ClassSpellListManager
+
+ClassSpellListManager = {}
+
+function ClassSpellListManager.onInit() end
+function ClassSpellListManager.onClose() end
+function ClassSpellListManager.generateNameKey(sName) end
+function ClassSpellListManager.getClassSpellListViewRecord(sClassName) end
+function ClassSpellListManager.isInitialized() end
+function ClassSpellListManager.setInitialized(bValue) end
+function ClassSpellListManager.addSpellRecordHandlers() end
+function ClassSpellListManager.removeSpellRecordHandlers() end
+function ClassSpellListManager.rebuildSpellRecords() end
+function ClassSpellListManager.onSpellAdded(vNode) end
+function ClassSpellListManager.onSpellDeleted(vNode) end
+function ClassSpellListManager.onSpellNameChange(vNode) end
+function ClassSpellListManager.onSpellSourceChange(vNode) end
+function ClassSpellListManager.helperAddSpellRecord(nodeSpell) end
+function ClassSpellListManager.helperRemoveSpellRecord(nodeSpell) end
+function ClassSpellListManager.helperUpdateSpellName(nodeSpell, rRecord) end
+function ClassSpellListManager.helperUpdateSpellSources(nodeSpell, rRecord) end
+function ClassSpellListManager.helperGetSpellSources(nodeSpell) end
+function ClassSpellListManager.addClassSpellListRecordHandlers() end
+function ClassSpellListManager.removeClassSpellListRecordHandlers() end
+function ClassSpellListManager.rebuildClassSpellListRecords() end
+function ClassSpellListManager.onClassSpellListAdded(vNode) end
+function ClassSpellListManager.onClassSpellListDeleted(vNode) end
+function ClassSpellListManager.onClassSpellListNameChange(vNode) end
+function ClassSpellListManager.onClassSpellListItemDeleted(vNode) end
+function ClassSpellListManager.onClassSpellListItemNameChange(vNode) end
+function ClassSpellListManager.helperAddClassSpellListRecord(vNode) end
+function ClassSpellListManager.helperRemoveClassSpellListRecord(vNode) end
+function ClassSpellListManager.helperUpdateClassSpellListName(vNode, rRecord) end
+function ClassSpellListManager.helperUpdateClassSpellListItems(vNode, rRecord) end
+function ClassSpellListManager.initialize() end
+function ClassSpellListManager.rebuildClassSpellLists() end
+function ClassSpellListManager.getClassesWithSpellList() end
+function ClassSpellListManager.getClassSpellListRecord(sClassName) end
+function ClassSpellListManager.onClassSpellListUpdate() end
+function ClassSpellListManager.handleSpellViewLink(sClass, sPath) end
+function ClassSpellListManager.callbackSetupCSLViews(sRecordType, tRecords) end
+function ClassSpellListManager.helperCallbackAddCSLViewFromSpell(nodeSpell) end
+function ClassSpellListManager.helperCallbackAddCSLViewFromRecord(nodeCSL) end
+function ClassSpellListManager.helperCallbackAddCSLViewName(sClassName) end
+function ClassSpellListManager.helperCallbackWriteCSLViews() end

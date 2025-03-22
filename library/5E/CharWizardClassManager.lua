@@ -1,0 +1,122 @@
+---@meta CharWizardClassManager
+
+---@class CharWizardClassManager
+
+CharWizardClassManager = {}
+
+function CharWizardClassManager.getClassDataByName(sClassName) end
+function CharWizardClassManager.isClass2024(sClassName) end
+function CharWizardClassManager.isClassImport(sClassName) end
+function CharWizardClassManager.getClassRecord(sClassName) end
+function CharWizardClassManager.getClassNode(sClassName) end
+function CharWizardClassManager.getClassWindow(sClassName) end
+function CharWizardClassManager.getClassLevel(sClassName) end
+function CharWizardClassManager.setClassLevel(sClassName, n) end
+function CharWizardClassManager.setClassLevelUp(sClassName) end
+function CharWizardClassManager.setClassLevelDown(sClassName) end
+function CharWizardClassManager.setSubclass(sClassName, s) end
+function CharWizardClassManager.getSubclassNode(sClassName) end
+function CharWizardClassManager.getSubclassName(sClassName) end
+function CharWizardClassManager.buildFeatureDataFromDecision(w) end
+function CharWizardClassManager.addClassFeatureData(tFeatureData) end
+function CharWizardClassManager.hasClassFeatureData(tFeatureData) end
+function CharWizardClassManager.getClassFeatureData(tFeatureData) end
+function CharWizardClassManager.hasClassFeatureChoice(tFeatureData) end
+function CharWizardClassManager.addClassFeatureAbilityIncreases(tFeatureData, sAbility, nMod) end
+function CharWizardClassManager.clearClassFeatureAbilityIncreases(tFeatureData) end
+function CharWizardClassManager.setClassFeatureSaveProf(tFeatureData, tProf) end
+function CharWizardClassManager.setClassFeatureArmorProf(tFeatureData, tProf) end
+function CharWizardClassManager.addClassFeatureArmorProfChoice(tFeatureData, s) end
+function CharWizardClassManager.clearClassFeatureArmorProfChoice(tFeatureData) end
+function CharWizardClassManager.setClassFeatureWeaponProf(tFeatureData, tProf) end
+function CharWizardClassManager.addClassFeatureWeaponProfChoice(tFeatureData, s) end
+function CharWizardClassManager.clearClassFeatureWeaponProfChoice(tFeatureData) end
+function CharWizardClassManager.setClassFeatureToolProf(tFeatureData, tProf) end
+function CharWizardClassManager.addClassFeatureToolProfChoice(tFeatureData, s) end
+function CharWizardClassManager.clearClassFeatureToolProfChoice(tFeatureData) end
+function CharWizardClassManager.setClassFeatureSkills(tFeatureData, tSkills) end
+function CharWizardClassManager.addClassFeatureSkillChoice(tFeatureData, s) end
+function CharWizardClassManager.clearClassFeatureSkillChoice(tFeatureData) end
+function CharWizardClassManager.setClassFeatureExpertises(tFeatureData, tExpertises) end
+function CharWizardClassManager.addClassFeatureExpertiseChoice(tFeatureData, s) end
+function CharWizardClassManager.clearClassFeatureExpertiseChoice(tFeatureData) end
+function CharWizardClassManager.setClassFeatureLanguages(tFeatureData, tLanguages) end
+function CharWizardClassManager.addClassFeatureLanguageChoice(tFeatureData, s) end
+function CharWizardClassManager.clearClassFeatureLanguageChoice(tFeatureData) end
+function CharWizardClassManager.clearClassFeatureFeatPath(tFeatureData) end
+function CharWizardClassManager.setClassFeatureFeatPath(tFeatureData, sPath) end
+function CharWizardClassManager.clearClassFeatureChoiceSelections(tFeatureData) end
+function CharWizardClassManager.addClassFeatureChoiceSelection(tFeatureData, s) end
+function CharWizardClassManager.getStartingClassName() end
+function CharWizardClassManager.getStartingClassRecord() end
+function CharWizardClassManager.isStartingClass2024() end
+function CharWizardClassManager.getStartingWealthRoll() end
+function CharWizardClassManager.setStartingWealthRoll(sWealthRoll) end
+function CharWizardClassManager.getStartingGold() end
+function CharWizardClassManager.setStartingGold(n) end
+function CharWizardClassManager.getStartingKitItems() end
+function CharWizardClassManager.setStartingKitItems(tClassItems) end
+function CharWizardClassManager.clearStartingKitItems() end
+function CharWizardClassManager.getStartingKitOptions() end
+function CharWizardClassManager.setStartingKitOptions(tClassKitOptions) end
+function CharWizardClassManager.clearStartingKitOptions() end
+function CharWizardClassManager.onAddClassSelectButton(wClassPage) end
+function CharWizardClassManager.onAddClassButton(wClass) end
+function CharWizardClassManager.onDeleteClassButton(wClass) end
+function CharWizardClassManager.onAddSubclassButton(wSubclass) end
+function CharWizardClassManager.onAddFeatClassButton(wFeat) end
+function CharWizardClassManager.onLevelUpClassButton(wClass) end
+function CharWizardClassManager.onCancelLevelUpClassButton(wClass) end
+function CharWizardClassManager.onUpdateClassLevel(wClass) end
+function CharWizardClassManager.addClass(sClassRecord) end
+function CharWizardClassManager.addClassImport(wClass, sClassName, sClassRecord) end
+function CharWizardClassManager.addClassStd(wClass, sClassName, sClassRecord) end
+function CharWizardClassManager.deleteClass(wClass, bLevelUp) end
+function CharWizardClassManager.updateClass(sClassName, bNewSubclassAdd) end
+function CharWizardClassManager.clearClassFeatures(sClassName) end
+function CharWizardClassManager.clearSubclassFeatures(sClassName) end
+function CharWizardClassManager.updateClassLevels() end
+function CharWizardClassManager.updateClassFeatures(wClass) end
+function CharWizardClassManager.updateSpellSlots(sClassName) end
+function CharWizardClassManager.populateClassProficiencies(wClass, nodeClass, bMultiClass) end
+function CharWizardClassManager.helperAddClassSaveProf(_, nodeProf, tFeatureData, tOutput) end
+function CharWizardClassManager.helperAddClassSkillProf(w, nodeProf, tFeatureData, tOutput) end
+function CharWizardClassManager.helperAddClassArmorProf(w, nodeProf, tFeatureData, tOutput) end
+function CharWizardClassManager.helperAddClassWeaponProf(w, nodeProf, tFeatureData, tOutput) end
+function CharWizardClassManager.helperAddClassToolProf(w, nodeProf, tFeatureData, tOutput) end
+function CharWizardClassManager.populateClassFeatures(sClassName, bNewSubclassAdd) end
+function CharWizardClassManager.checkAddFeature(nodeFeature, sClassName, sSubclass, bNewSubclassAdd) end
+function CharWizardClassManager.addClassFeature(sClassName, nodeFeature) end
+function CharWizardClassManager.handleFeatureChoices(wClassFeature, tFeatureData) end
+function CharWizardClassManager.collectFeatureChoicesByChoiceType(sClassName, sChoiceType, bFinalize) end
+function CharWizardClassManager.helperCheckFeatureChoiceRecordOptions(sClassName, sChoiceType, bFinalize, nodeRecord, tResults) end
+function CharWizardClassManager.helperCheckFeatureChoiceMatch(sClassName, sChoiceType, bFinalize, nodeChoice, tResults) end
+function CharWizardClassManager.updateFeatureExpertiseChoices(sClassName, w) end
+function CharWizardClassManager.handleFeatureSkills(w, tFeatureData, sFeatureText) end
+function CharWizardClassManager.handleFeatureArmorProf(w, tFeatureData, sFeatureText) end
+function CharWizardClassManager.handleFeatureWeaponProf(w, tFeatureData, sFeatureText) end
+function CharWizardClassManager.handleFeatureToolProf(w, tFeatureData, sFeatureText) end
+function CharWizardClassManager.handleFeatureLanguages(w, tFeatureData, sFeatureText) end
+function CharWizardClassManager.getCharWizardMagicData() end
+function CharWizardClassManager.getCharWizardClassMagicData(sClassName) end
+function CharWizardClassManager.helperGetCharWizardClassMagicData(tClassData) end
+function CharWizardClassManager.processClassDecision(wDecision) end
+function CharWizardClassManager.resetClassDecision(wDecision) end
+function CharWizardClassManager.handleClassDecision(wDecision) end
+function CharWizardClassManager.handleASIOrFeatDecision(wDecision) end
+function CharWizardClassManager.handleClassASIOptionDecision(wDecision) end
+function CharWizardClassManager.handleClassASIDecision(wDecision) end
+function CharWizardClassManager.handleClassFeatDecision(wDecision) end
+function CharWizardClassManager.handleClassSkillDecision(wDecision) end
+function CharWizardClassManager.handleClassExpertiseDecision(wDecision) end
+function CharWizardClassManager.handleClassArmorProfDecision(wDecision) end
+function CharWizardClassManager.handleClassWeaponProfDecision(wDecision) end
+function CharWizardClassManager.handleClassToolProfDecision(wDecision) end
+function CharWizardClassManager.handleClassLanguageDecision(wDecision) end
+function CharWizardClassManager.handleClassFeatureChoiceDecision(wDecision) end
+function CharWizardClassManager.handleClassEquipmentKit() end
+function CharWizardClassManager.handleClassEquipmentKit2024() end
+function CharWizardClassManager.handleClassEquipmentKit2014() end
+function CharWizardClassManager.handleKitSelectionItem(nodeItem, nCount) end
+function CharWizardClassManager.addClassKnownSpell(w) end
+function CharWizardClassManager.removeClassKnownSpell(w) end

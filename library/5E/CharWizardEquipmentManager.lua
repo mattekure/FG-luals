@@ -1,0 +1,45 @@
+---@meta CharWizardEquipmentManager
+
+---@class CharWizardEquipmentManager
+
+CharWizardEquipmentManager = {}
+
+function CharWizardEquipmentManager.onInit() end
+function CharWizardEquipmentManager.onEquipmentPageUpdate() end
+function CharWizardEquipmentManager.getWizardEquipmentKitWindow() end
+function CharWizardEquipmentManager.getWizardEquipmentWealthWindow() end
+function CharWizardEquipmentManager.onBackgroundClear() end
+function CharWizardEquipmentManager.onClassClear() end
+function CharWizardEquipmentManager.updateKitVisibility() end
+function CharWizardEquipmentManager.onKitUpdate() end
+function CharWizardEquipmentManager.onBackgroundKitUpdate() end
+function CharWizardEquipmentManager.helperUpdateBackgroundKitItems(wEquipmentKit) end
+function CharWizardEquipmentManager.resetBackgroundKitItems() end
+function CharWizardEquipmentManager.onBackgroundKitClear() end
+function CharWizardEquipmentManager.onClassKitUpdate() end
+function CharWizardEquipmentManager.helperUpdateClassKitItems(wEquipmentKit) end
+function CharWizardEquipmentManager.resetClassKitItems() end
+function CharWizardEquipmentManager.onClassKitClear() end
+function CharWizardEquipmentManager.processKitSelection(w) end
+function CharWizardEquipmentManager.processKitSelection2024(w) end
+function CharWizardEquipmentManager.processKitSelection2014(w) end
+function CharWizardEquipmentManager.resetKitSelection(w) end
+function CharWizardEquipmentManager.resetKitSelection2024(w) end
+function CharWizardEquipmentManager.resetKitSelection2014(w) end
+function CharWizardEquipmentManager.onWealthUpdate() end
+function CharWizardEquipmentManager.onRolledWealthUpdate() end
+function CharWizardEquipmentManager.setRolledWealth(n) end
+function CharWizardEquipmentManager.onRolledWealthClear() end
+function CharWizardEquipmentManager.onRolledWealthChanged(n) end
+function CharWizardEquipmentManager.onBackgroundWealthUpdate() end
+function CharWizardEquipmentManager.onBackgroundWealthClear() end
+function CharWizardEquipmentManager.onBackgroundWealthChanged() end
+function CharWizardEquipmentManager.onClassWealthUpdate() end
+function CharWizardEquipmentManager.onClassWealthClear() end
+function CharWizardEquipmentManager.onClassWealthChanged() end
+function CharWizardEquipmentManager.handleWealthRoll() end
+function CharWizardEquipmentManager.onWealthRoll(rSource, _, rRoll) end
+function CharWizardEquipmentManager.handleWealthRollClear() end
+function CharWizardEquipmentManager.setDefaultCurrencies(w) end
+function CharWizardEquipmentManager.updateTotalWealth() end
+function CharWizardEquipmentManager.updateEditWealthAmount(sCurrency, nCurrency) end

@@ -1,0 +1,50 @@
+---@meta CharWizardBackgroundManager
+
+---@class CharWizardBackgroundManager
+
+CharWizardBackgroundManager = {}
+
+function CharWizardBackgroundManager.getBackgroundRecord() end
+function CharWizardBackgroundManager.getBackgroundNode() end
+function CharWizardBackgroundManager.setBackgroundRecord(v) end
+function CharWizardBackgroundManager.isBackground2024() end
+function CharWizardBackgroundManager.handleBackgroundEquipmentKit2024() end
+function CharWizardBackgroundManager.handleBackgroundEquipmentKit2014() end
+function CharWizardBackgroundManager.parseBackgroundGold2014(s) end
+function CharWizardBackgroundManager.parseBackgroundEquipmentKitItems2014(s) end
+function CharWizardBackgroundManager.getBackgroundStartingGold() end
+function CharWizardBackgroundManager.setBackgroundStartingGold(nWealth) end
+function CharWizardBackgroundManager.getBackgroundStartingKitItems() end
+function CharWizardBackgroundManager.setBackgroundStartingKitItems(tBackgroundItems) end
+function CharWizardBackgroundManager.getBackgroundStartingKitOptions() end
+function CharWizardBackgroundManager.setBackgroundStartingKitOptions(tBackgroundOptions) end
+function CharWizardBackgroundManager.setBackgroundFeat(s) end
+function CharWizardBackgroundManager.setBackgroundFeatPath(sPath) end
+function CharWizardBackgroundManager.addBackgroundAbilityIncreases(sAbility, nMod) end
+function CharWizardBackgroundManager.clearBackgroundAbilityIncreases() end
+function CharWizardBackgroundManager.setBackgroundBaseSkills(tSkills) end
+function CharWizardBackgroundManager.addBackgroundSkillChoice(s) end
+function CharWizardBackgroundManager.clearBackgroundSkillChoice() end
+function CharWizardBackgroundManager.setBackgroundBaseTools(tTools) end
+function CharWizardBackgroundManager.addBackgroundToolChoice(s) end
+function CharWizardBackgroundManager.clearBackgroundToolChoice() end
+function CharWizardBackgroundManager.setBackgroundBaseLanguages(tLanguages) end
+function CharWizardBackgroundManager.addBackgroundLanguageChoice(s) end
+function CharWizardBackgroundManager.clearBackgroundLanguageChoice() end
+function CharWizardBackgroundManager.processBackground(w) end
+function CharWizardBackgroundManager.resetBackground() end
+function CharWizardBackgroundManager.updateBackgroundFeatures() end
+function CharWizardBackgroundManager.handleBackgroundAbilities(nodeBackground, bIs2024) end
+function CharWizardBackgroundManager.handleBackgroundSkills(nodeBackground, bIs2024) end
+function CharWizardBackgroundManager.handleBackgroundTools(nodeBackground, bIs2024) end
+function CharWizardBackgroundManager.handleBackgroundLanguages(nodeBackground, bIs2024) end
+function CharWizardBackgroundManager.handleBackgroundFeat(nodeBackground, bIs2024) end
+function CharWizardBackgroundManager.handleBackgroundFeatures(nodeBackground, bIs2024) end
+function CharWizardBackgroundManager.processBackgroundDecision(w) end
+function CharWizardBackgroundManager.processBackgroundDecisionASIOption(wDecision) end
+function CharWizardBackgroundManager.processBackgroundDecisionASI(wDecision) end
+function CharWizardBackgroundManager.processBackgroundDecisionSkill(wDecision) end
+function CharWizardBackgroundManager.processBackgroundDecisionLanguage(wDecision) end
+function CharWizardBackgroundManager.processBackgroundDecisionTool(wDecision) end
+function CharWizardBackgroundManager.onAddFeatBackgroundButton(wFeat) end
+function CharWizardBackgroundManager.resetBackgroundDecisionFeat(wDecision) end

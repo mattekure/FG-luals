@@ -1,0 +1,31 @@
+---@meta CharWizardDecisionManager
+
+---@class CharWizardDecisionManager
+
+CharWizardDecisionManager = {}
+
+function CharWizardDecisionManager.createDecisions(w, tData) end
+function CharWizardDecisionManager.createDecision(w, tData) end
+function CharWizardDecisionManager.refreshOverallDecisions() end
+function CharWizardDecisionManager.refreshOverallDecision(sDecisionType) end
+function CharWizardDecisionManager.helperCallForEachRecord(fn, ...) end
+function CharWizardDecisionManager.helperCollectDataTypeMap(sDecisionType) end
+function CharWizardDecisionManager.helperCollectDataTypeBaseMap(sDecisionType) end
+function CharWizardDecisionManager.helperRefreshRecordDecisionApplyBaseMap(wRecord, sDecisionType, tMap) end
+function CharWizardDecisionManager.helperRefreshRecordDecisionOptionsUpdate(wRecord, sDecisionType, tMap) end
+function CharWizardDecisionManager.refreshExpertiseDecision() end
+function CharWizardDecisionManager.helperRefreshRecordExpertiseDecisionApplySkillMap(wRecord, tSkillMap) end
+function CharWizardDecisionManager.helperRefreshRecordExpertiseDecisionOptionsUpdate(wRecord, tSkillMap, tMap) end
+function CharWizardDecisionManager.refreshFeatureChoiceDecision() end
+function CharWizardDecisionManager.helperRefreshRecordFeatureChoiceDecisionOptionsUpdate(wRecord, tMap) end
+function CharWizardDecisionManager.processSkillDecision(wDecision) end
+function CharWizardDecisionManager.processExpertiseDecision(wDecision) end
+function CharWizardDecisionManager.processFeatureChoiceDecision(wDecision) end
+function CharWizardDecisionManager.processArmorProfDecision(wDecision) end
+function CharWizardDecisionManager.processToolProfDecision(wDecision) end
+function CharWizardDecisionManager.processWeaponProfDecision(wDecision) end
+function CharWizardDecisionManager.processLanguageDecision(wDecision) end
+function CharWizardDecisionManager.helperCollectFeatureDecisionChoiceMap(wDecision) end
+function CharWizardDecisionManager.processAbilityDecision(wDecision) end
+function CharWizardDecisionManager.processFeatureAbilityDecision(wDecision) end
+function CharWizardDecisionManager.processSpellDecision(wDecision) end
