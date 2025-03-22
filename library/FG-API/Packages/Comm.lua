@@ -5,6 +5,9 @@
 ---@class Comm
 Comm = {}
 
+function Comm.activateSlashCommand()
+end
+
 ---Add a new entry to the chat window. The message is not delivered to other users, and chatwindow.onReceiveMessage event is not fired.
 ---@param messagedata table A table containing information about the message.
 function Comm.addChatMessage(messagedata)
@@ -12,6 +15,12 @@ end
 
 --- This function will clear the chat window.
 function Comm.clearChat()
+end
+
+function Comm.addKeyedEventHandler()
+end
+
+function Comm.removeKeyedEventHandler()
 end
 
 ---Add a new entry to the chat window, and also delivers to others.
