@@ -28,6 +28,12 @@ end
 function Interface.clipboardSetText(text)
 end
 
+function Interface.dialogColor()
+end
+
+function Interface.dialogColorClose()
+end
+
 ---Cancel any file open or file save dialogs.
 function Interface.dialogFileClose()
 end
@@ -72,9 +78,87 @@ end
 function Interface.findWindow(windowclass, datasource)
 end
 
+function Interface.getAssetGridSize()
+end
+
 ---Return a table with the names of all the registered die and customdie types.
 ---@return string[] # Table of strings, which correspond to the die resources defined via the die and customdie tags.
 function Interface.getDice()
+end
+
+function Interface.getDiceInfo()
+end
+
+function Interface.getDiceRelativeScale()
+end
+
+function Interface.getDiceSkinInfo()
+end
+
+function Interface.getDiceSkins()
+end
+
+function Interface.getDistanceBaseUnits()
+end
+
+function Interface.getDistanceDiagMult()
+end
+
+function Interface.getDistanceSuffix()
+end
+
+function Interface.getFontColor()
+end
+
+function Interface.getRuleset()
+end
+
+function Interface.getUIScale()
+end
+
+function Interface.getVersion()
+end
+
+function Interface.isDiceRollingDisabled()
+end
+
+function Interface.isDie()
+end
+
+function Interface.isOwnedDiceSkin()
+end
+
+function Interface.isWindowClass()
+end
+
+function Interface.openRemoteWindow()
+end
+
+function Interface.refreshAssets()
+end
+
+function Interface.setDiceCustom()
+end
+
+function Interface.setDiceRelativeScale()
+end
+
+function Interface.setDistanceBaseUnits()
+end
+
+function Interface.setDistanceDiagMult()
+end
+
+function Interface.setDistanceSuffix()
+end
+
+function Interface.setUIScale()
+end
+
+function Interface.disableDiceRolling()
+end
+
+function Interface.getIconSize()
 end
 
 ---Returns a table of all the valid font resource names in the current ruleset.
