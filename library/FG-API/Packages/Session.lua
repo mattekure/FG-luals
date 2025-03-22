@@ -9,4 +9,5 @@
 ---@field CampaignName string Variable is the name of the currently active campaign.
 ---@field RulesetName string Variable is the name of the currently active ruleset.
 ---@field UserName string Variable is the local user's network username (i.e. the user’s FG account name).
+---@field DebugMode boolean
 Session = {}
