@@ -263,18 +263,18 @@ function DB.getType(nodeid)
 end
 
 ---Returns the value contained in the specified database node. The return value(s) vary depending on the type of the node. If the node does not exist or if the node is a non-value type, then the default values passed in will be returned or `nil` if no default values are specified.
+---@param nodepath string A data base path identifier.
+---@param default? any The value(s) to be returned if getValue fails. (node does not exist; or non-value node)
+---@return any ... # Returns data contained in the database node
+function DB.getValue(nodepath, default)
+end
+
+---Returns the value contained in the specified database node. The return value(s) vary depending on the type of the node. If the node does not exist or if the node is a non-value type, then the default values passed in will be returned or `nil` if no default values are specified.
 ---@param sourcenode databasenode A databasenode object representing the parent of the target node
 ---@param subpath? string If the first parameter has type databasenode, then this parameter specifies the relative data node identifier path from the specified node object.
 ---@param default? any The value(s) to be returned if getValue fails. (node does not exist; or non-value node)
 ---@return any ... # Returns data contained in the database node
 function DB.getValue(sourcenode, subpath, default)
-end
-
----Returns the value contained in the specified database node. The return value(s) vary depending on the type of the node. If the node does not exist or if the node is a non-value type, then the default values passed in will be returned or `nil` if no default values are specified.
----@param nodepath string A data base path identifier.
----@param default? any The value(s) to be returned if getValue fails. (node does not exist; or non-value node)
----@return any ... # Returns data contained in the database node
-function DB.getValue(nodepath, default)
 end
 
 ---Returns the version number of the FG client last used to save the data, or since the last updateVersion call.
